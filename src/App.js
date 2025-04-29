@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, CssBaseline } from '@mui/material';
+import ImageGenerator from './components/ImageGenerator';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+<Container 
+  maxWidth="lg" 
+  sx={{ 
+    py: 8,
+    minHeight: '100vh',
+    display: 'flex',
+    alignItems: 'center', // Vertically center content
+    justifyContent: 'center',
+    background: 'radial-gradient(circle at top, #f5f7fa 0%, #e4e8ed 100%)'
+  }}
+>
+  <ImageGenerator />
+</Container>
+    </>
   );
 }
 
