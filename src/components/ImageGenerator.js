@@ -78,7 +78,7 @@ export default function ImageGenerator() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch("http://localhost:3001/api/generate", {
+      const response = await fetch("https://your-backend-url.vercel.app/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt })
